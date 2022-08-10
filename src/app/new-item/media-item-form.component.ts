@@ -5,8 +5,8 @@ import {
   Validators,
   FormBuilder
 } from "@angular/forms";
-import { MediaItemService } from "./media-item.service";
-import { LookupListToken } from "./providers";
+import { MediaItemService } from "../media-item.service";
+import { LookupListToken } from "../providers";
 import { Router } from "@angular/router";
 
 @Component({
