@@ -73,7 +73,9 @@ export class MockXHRBackend implements HttpBackend {
             }
             let mediaItems;
             if (medium) {
-              mediaItems = this.mediaItems.filter((i) => i.medium === medium);
+              mediaItems = this.mediaItems.filter(
+                (i) => i.medium.toLowerCase() === medium.toLowerCase()
+              );
             } else {
               mediaItems = this.mediaItems;
             }

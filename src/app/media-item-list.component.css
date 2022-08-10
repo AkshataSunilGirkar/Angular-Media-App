@@ -3,8 +3,12 @@
   height: calc(100% - 95px);
   flex-direction: column;
 }
-nav a {
+.icon {
   cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 50px;
 }
 header {
   color: #c6c5c3;

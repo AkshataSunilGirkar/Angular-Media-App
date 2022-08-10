@@ -1,28 +1,7 @@
-<nav>
-  <a (click)="getMediaItems('')">
-    <img
-      src="https://raw.githubusercontent.com/coursefiles/angular-essential-training/06_04b/src/assets/04.png"
-      class="icon"
-    />
-  </a>
-  <a (click)="getMediaItems('Movies')">
-    <img
-      src="https://raw.githubusercontent.com/coursefiles/angular-essential-training/06_04b/src/assets/03.png"
-      class="icon"
-    />
-  </a>
-  <a (click)="getMediaItems('Series')">
-    <img
-      src="https://raw.githubusercontent.com/coursefiles/angular-essential-training/06_04b/src/assets/02.png"
-      class="icon"
-    />
-  </a>
-</nav>
-
 <header
   [ngClass]="{'medium-movies':medium === 'Movies', 'medium-series':medium === 'Series'}"
 >
-  <h2>{{medium}}</h2>
+  <h2>{{medium | titlecase}}</h2>
   <div *ngIf="mediaItems">{{ mediaItems | categoryList }}</div>
 </header>
 <section>
@@ -33,3 +12,9 @@
     (delete)="onMediaItemDelete($event)"
   ></mw-media-item>
 </section>
+<a routerLink="/add">
+  <img
+    src="https://raw.githubusercontent.com/coursefiles/angular-essential-training/06_04b/src/assets/01.png"
+    class="icon"
+  />
+</a>
