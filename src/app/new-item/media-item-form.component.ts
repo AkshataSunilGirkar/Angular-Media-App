@@ -34,7 +34,7 @@ export class MediaItemFormComponent implements OnInit {
           Validators.pattern("[\\w\\-\\s\\/]+")
         ])
       ),
-      category: this.formBuilder.control(""),
+      category: this.formBuilder.control("", Validators.required),
       year: this.formBuilder.control("", this.yearValidator)
     });
   }
@@ -45,7 +45,7 @@ export class MediaItemFormComponent implements OnInit {
     }
     const year = parseInt(control.value, 10);
     const minYear = 1900;
-    const maxYear = 2100;
+    const maxYear = 2022;
     if (year >= minYear && year <= maxYear) {
       return null;
     } else {

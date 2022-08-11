@@ -43,7 +43,7 @@ input[required].ng-invalid:not(.required-invalid) {
   width: 50px;
 }
 button[type="submit"] {
-  background-color: red;
+  background-color: rgb(63, 52, 221);
   border: 0;
   padding: 10px;
   font-size: 1em;

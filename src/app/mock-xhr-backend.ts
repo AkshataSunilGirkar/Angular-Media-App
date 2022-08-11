@@ -40,7 +40,7 @@ export class MockXHRBackend implements HttpBackend {
       name: "Hoopers",
       medium: "Series",
       category: "Drama",
-      year: null,
+      year: 2019,
       watchedOn: null,
       isFavorite: true
     },

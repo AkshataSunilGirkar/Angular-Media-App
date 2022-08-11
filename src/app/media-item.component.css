@@ -13,7 +13,7 @@ h2 {
 }
 
 :host(.medium-movies) {
-  background-color: #091540;
+  background-color: #0a1a53;
 }
 :host(.medium-movies) > h2 {
   color: #53ace4;
@@ -23,6 +23,12 @@ h2 {
 }
 :host(.medium-series) > h2 {
   color: #df615d;
+}
+:host-context(.medium-movies) .label {
+  background-color: #53ace4;
+}
+:host-context(.medium-series) .label {
+  background-color: #e77c78;
 }
 .tools {
   margin-top: 8px;
@@ -53,13 +59,4 @@ h2 {
   border-radius: 4px;
   color: #ffffff;
   cursor: pointer;
-}
-.details {
-  display: block;
-  background-color: #37ad79;
-  padding: 4px;
-  font-size: 0.8em;
-  border-radius: 4px;
-  color: #ffffff;
-  text-decoration: none;
 }
